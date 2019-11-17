@@ -179,6 +179,7 @@ a:active {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-txt-box {
@@ -328,4 +329,50 @@ transform: scale(1.03); /* When the imgages are clicked they reduce in size and 
 }
 .city-feature {
     margin-bottom: 5px;
+}
+
+
+/* --------------------------------------------------------- */
+/* Testimonials */
+/* -------------------------------------------------------- */
+
+.section-testimonials {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)),url('img/back-customers.jpg');
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed; /* the image will always stay in the same place  */
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145% ;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute; /* when using position absolute , must assure parent has relative */
+    top: -5px;
+    left: -5px;
+}
+
+
+cite {  /* this will make the block separate from the text  */
+
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
