@@ -143,6 +143,8 @@ a:active {
      text-decoration: none; /* this gets rid of the underline */
      border-radius: 200px;
      transition: background-color 0.2s, border 0.2s, color 0.2s;
+     color: #fff;
+     border: 1px solid #e67e22;
  }
 
  .btn-full:link,
@@ -160,10 +162,12 @@ a:active {
  .btn:hover, /* hover : mouse over a button, active: when we click a button */
  .btn:active {
     background-color: #cf6d17;
+    color: #fff;
  }
  .btn-full:hover,
  .btn-ful:active {
     border: 1px solid #e67e22;
+    color: #fff;
  }
  .btn-ghost:hover,
  .btn-ghost:active {
@@ -298,7 +302,7 @@ transform: scale(1.03); /* When the imgages are clicked they reduce in size and 
     width: 55px; /*  this determines how wide the cricle will be  */
     text-align: center;
     padding: 5px;
-     float: left; /* this made the numbers shift to the left so that the text appears on the right of the numbers  */
+    float: left ; /* this made the numbers shift to the left so that the text appears on the right of the numbers  */
     font-size: 150%;
      margin-right: 25px; /* this creates margin between the numbers and the the text */
 }
